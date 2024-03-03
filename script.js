@@ -42,6 +42,7 @@ for (let i = 0; i < hideBtns.length; i++) {
   });
 }
 
+// Hide/show button whether mouse over or not
 for (let i = 0; i < jobItems.length; i++) {
   jobItems[i].addEventListener("mouseover", function () {
     if (isShowedOn[i]) return;
@@ -57,6 +58,7 @@ const emailForm = document.getElementById("email-form");
 const emailInput = document.getElementById("email-input");
 const emailSubmit = document.getElementById("email-submit");
 
+// Handle email submit
 emailSubmit.addEventListener("click", function () {
   if (validateEmail(emailInput.value)) {
     hideElement(document.querySelector(".alert-warning"));
