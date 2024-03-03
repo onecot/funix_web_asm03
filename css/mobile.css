@@ -1,0 +1,122 @@
+@media screen and (max-width: 769px) {
+  /* body {
+    font-size: 16px;
+  } */
+
+  /* .job-period,
+  .job-details,
+  #hobby .job-desc {
+    font-size: 1rem;
+  } */
+
+  /* NAVBAR */
+  #nav-bar > .cst-container {
+    grid-template-columns: 1fr;
+    justify-items: left;
+    gap: 20px;
+  }
+
+  #nav-bar a::after,
+  #nav-bar a:first-child::before {
+    display: none;
+  }
+
+  /* ABOUT */
+  #about > .cst-container {
+    padding: 0;
+    grid-template-columns: 1fr;
+    /* row-gap: 60px; */
+  }
+
+  #about .about-bg {
+    display: none;
+  }
+
+  #personal-info,
+  #target {
+    padding: 60px 50px 60px 50px !important;
+  }
+
+  #personal-info {
+    background-color: var(--border-color);
+  }
+
+  /* JOBS */
+  #job-info > .cst-container {
+    grid-template-columns: 1fr;
+  }
+
+  #hobby.job-item > .job-desc {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  #hobby.job-item > .job-desc > div {
+    width: 100px;
+  }
+
+  /* CERTIFICATES */
+  #cert-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .cert-item::after {
+    display: none;
+  }
+
+  .cert-item:nth-child(odd)::before,
+  .cert-item:nth-child(even)::before {
+    display: block;
+    content: "";
+    height: 1px;
+    width: 100%;
+    top: -30px;
+  }
+
+  /* PROJECT */
+  #project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info,
+  .project-desc {
+    font-size: 1rem;
+  }
+
+  .project-info {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .project-info__time {
+    grid-row: 1 / span 1;
+    justify-self: left;
+  }
+
+  /* Footer */
+  #footer ul {
+    grid-template-columns: repeat(3, minmax(40px, 1fr));
+  }
+
+  #footer ul li {
+    height: 32px;
+  }
+
+  #footer i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: var(--blue-color);
+  }
+
+  #footer ul li span {
+    display: none;
+  }
+}

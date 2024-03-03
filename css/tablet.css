@@ -1,0 +1,59 @@
+@media screen and (max-width: 1200px) {
+  .cst-container,
+  section > .cst-container {
+    width: 100%;
+  }
+
+  #avatar,
+  #avatar-area {
+    display: none;
+  }
+
+  /* JOBS */
+  #job-info > .cst-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #hobby.job-item > .job-desc {
+    justify-items: space-between;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .job-period,
+  .job-details,
+  #hobby .job-desc p {
+    font-size: 1rem;
+  }
+
+  /* CERTIFICATES */
+  .cert-item {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  /* PROJECT */
+  .project-info {
+    grid-template-columns: 2fr 3fr;
+    column-gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  .project-desc {
+    font-size: 0.9rem;
+  }
+
+  .project-info__time {
+    grid-row: 1 / span 2;
+    justify-self: left;
+  }
+
+  .project-preview {
+    height: fit-content;
+  }
+
+  .project-item img {
+    object-fit: contain;
+  }
+}
